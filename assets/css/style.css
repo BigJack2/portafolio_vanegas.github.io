@@ -952,3 +952,91 @@ section {
     padding-right: 20px 15px;
   }
 }
+
+/* Selector flotante */
+#language-switcher {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  padding: 6px 10px;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+#language-switcher:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+/* Contenedor visual del select */
+.select-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#language-switcher i {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Estilo del select */
+#lang-select {
+  border: none;
+  background: transparent;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  outline: none;
+  padding-right: 18px;
+  appearance: none;
+  /* oculta la flecha nativa */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+/* Opciones internas */
+#lang-select option {
+  color: #333;
+}
+
+/* ✅ Flecha personalizada */
+.select-wrapper .arrow {
+  position: absolute;
+  right: 4px;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #555;
+  /* color de la flecha */
+  transition: transform 0.3s ease;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Cuando pasas el mouse, la flecha baja un poco */
+#language-switcher:hover .arrow {
+  transform: translateY(-40%);
+}
+
+/* Responsivo */
+@media (max-width: 1200px) {
+  #language-switcher {
+    right: 15px;
+    top: 70px;
+    padding: 5px 8px;
+  }
+
+  #lang-select {
+    font-size: 0.85rem;
+  }
+}

@@ -1,13 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portafolio Sebastian Vanegas - Index</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <!-- ✅ Título y descripción SEO -->
+  <title>Portafolio de Sebastian Vanegas – Desarrollador Full Stack</title>
+  <meta name="description" content="Desarrollador Backend en C#, Blazor y .NET. Experiencia en desarrollo web, buenas prácticas de código, APIs, pruebas unitarias y más.">
+
+  <!-- ✅ Open Graph -->
+  <meta property="og:title" content="Sebastian Vanegas – Desarrollador Full Stack">
+  <meta property="og:description" content="Portafolio profesional con experiencia en C#, .NET, Blazor y desarrollo web moderno.">
+  <meta property="og:image" content="https://tuusuario.github.io/assets/img/profile-img-2.webp">
+  <meta property="og:url" content="https://tuusuario.github.io/">
+  <meta property="og:type" content="website">
+
+  <!-- ✅ Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sebastian Vanegas – Desarrollador Full Stack">
+  <meta name="twitter:description" content="Desarrollador C# / .NET con experiencia en proyectos de software empresarial.">
+  <meta name="twitter:image" content="https://tuusuario.github.io/assets/img/profile-img-2.webp">
 
   <!-- Favicons -->
   <link href="assets/img/solid.png" rel="icon">
@@ -26,7 +39,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -34,12 +46,25 @@
   <!-- ======= Mobile nav toggle button ======= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
+  <!-- Language switcher flotante -->
+  <div id="language-switcher" aria-hidden="false">
+    <div class="select-wrapper">
+      <i class="bi bi-translate"></i>
+      <select id="lang-select" class="form-select form-select-sm" aria-label="Language selector">
+      <option value="es">🇪🇸 Español</option>
+      <option value="en">🇺🇸 English</option>
+      </select>
+      <span class="arrow"></span>
+    </div>
+  </div>
+
+
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/profile-img-2.jpg" alt="" class="img-fluid rounded-circle">
+        <img src="assets/img/profile-img-2.jpg" class="rounded-circle">
         <h1 class="text-light"><a href="index.html">Sebastian Vanegas</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="https://www.linkedin.com/in/sebastian-vanegas-560620127/" target="_blank"
@@ -52,18 +77,18 @@
       <nav id="navbar" class="nav-menu navbar">
         <ul>
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i>
-              <span>Inicio</span></a></li>
+              <span data-i18n="nav_inicio">Inicio</span></a></li>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i>
-              <span>Acerca</span></a></li>
+              <span data-i18n="nav_acerca">Acerca</span></a></li>
           <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i>
-              <span>Experiencia</span></a>
+              <span data-i18n="nav_experiencia">Experiencia</span></a>
           </li>
           <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i>
-              <span>Servicios</span></a></li>
+              <span data-i18n="nav_servicios">Servicios</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i>
-              <span>Contacto</span></a></li>
-          <li><a href="./assets/docs/HV_Sebastian_Vanegas.pdf" target="_blank" class="nav-link scrollto"><i class='bx bxs-download'></i>
-              <span>Descargar HV</span></a></li>
+              <span data-i18n="nav_contacto">Contacto</span></a></li>
+          <li><a href="./assets/docs/Hoja_de_Vida_Sebastian_Vanegas.pdf" target="_blank" class="nav-link scrollto"><i class='bx bxs-download'></i>
+              <span data-i18n="nav_descargar">Descargar CV</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
@@ -73,8 +98,9 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>Sebastian Vanegas</h1>
-      <p>Soy <span class="typed"
-          data-typed-items="diseñador web, desarrollador frontend, analista de lógica, desarrollador backend, administrador T.I."></span>
+      <p><span data-i18n="hero_soy"></span> <span class="typed"
+          id="typed-roles"
+          data-typed-items=""></span>
       </p>
     </div>
   </section><!-- End Hero -->
@@ -86,8 +112,8 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Acerca</h2>
-          <p>Soy una persona respetuosa y confiable, Buscando siempre superarme para brindar las mejores soluciones tecnológicas, Comprometido con las metas propiciando el liderazgo para un mejor avance de los proyectos establecidos.</p>
+          <h2 data-i18n="about_titulo">Acerca</h2>
+          <p data-i18n="about_parrafo">Soy una persona respetuosa y confiable, Buscando siempre superarme para brindar las mejores soluciones tecnológicas, Comprometido con las metas propiciando el liderazgo para un mejor avance de los proyectos establecidos.</p>
         </div>
 
         <div class="row">
@@ -95,46 +121,46 @@
             <img src="assets/img/profile-img-2.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Desarrollador Frontend/Backend, Diseñador web &amp; Analista.</h3>
-            <p class="fst-italic">
-              Amplia experiencia al haber trabajado en mi proyecto personal <strong>www.buhodemica.com</strong> una plataforma web con gran complejidad, ademas de haber elaborado otras paginas web y diseños a terceros.
+            <h3 data-i18n="about_rol">Desarrollador Frontend/Backend, Diseñador web &amp; Analista.</h3>
+            <p class="fst-italic" data-i18n="about_experiencia">
+              Cuento con una amplia experiencia adquirida mediante el desarrollo de proyectos personales complejos y más de cuatro años de trabajo en Siesa, empresa de software especializada en soluciones empresariales, donde he participado en el desarrollo y mejora continua de un ERP robusto y de alto nivel técnico.
             </p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Fecha de nacimiento:</strong> <span>23 Feb 1993</span>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about_dn_fecha">Fecha de nacimiento:</strong> <span>23 Feb 1993</span>
                   </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Whatsapp:</strong> <span>+57 312 426 4832</span>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about_whatsapp">Whatsapp:</strong> <span>+57 312 426 4832</span>
                   </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Ubicación:</strong> <span>El
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about_ubicacion">Ubicación:</strong> <span>El
                       Cerrito (Valle del Cauca - Colombia)</span>
                   </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Estado Civil:</strong>
-                    <span>Soltero</span>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about_estado">Estado Civil:</strong>
+                    <span data-i18n="about_soltero">Soltero</span>
                   </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Edad:</strong> <span id="edad"></span>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about_edad">Edad:</strong> <span id="edad"></span>
                   </li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Grado:</strong> <span>Desarrolador
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about_grado">Grado:</strong> <span data-i18n="about_grado_valor">Desarrollador
                       Junior</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Correo:</strong>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about_correo">Correo:</strong>
                     <span>jsvanegas2014@gmail.com</span>
                   </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong>
-                    <span>Disponible</span>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about_freelance">Freelance:</strong>
+                    <span data-i18n="about_disponible">Disponible</span>
                   </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Hijos:</strong> <span>No</span>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about_hijos">Hijos:</strong> <span data-i18n="about_no">No</span>
                   </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Libreta Militar:</strong>
-                    <span>Si</span>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about_libreta">Libreta Militar:</strong>
+                    <span data-i18n="about_si">Si</span>
                   </li>
                 </ul>
               </div>
             </div>
-            <p>
+            <p data-i18n="about_disponibilidad">
               Disponibilidad para cambio de residencia dentro y fuera del país.
             </p>
           </div>
@@ -148,8 +174,8 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Habilidades</h2>
-          <p>Gran parte de mis habilidades son gracias al aprendizaje autodidacta, así como el esfuerzo por el mejoramiento constante y la práctica.</p>
+          <h2 data-i18n="skills_titulo">Habilidades</h2>
+          <p data-i18n="skills_parrafo">Mi crecimiento profesional ha sido impulsado por el aprendizaje autodidacta, la disciplina y una búsqueda permanente de la excelencia a través de la práctica y la mejora continua.</p>
         </div>
 
         <div class="row skills-content">
@@ -157,27 +183,27 @@
           <div class="col-lg-6" data-aos="fade-up">
 
             <div class="progress">
-              <span class="skill">HTML <i class="val">90%</i></span>
+              <span class="skill">HTML <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
                   aria-valuemax="100">
                 </div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">CSS3 <i class="val">95%</i></span>
+              <span class="skill">CSS <i class="val">75%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
                   aria-valuemax="100">
                 </div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">Sass CSS <i class="val">95%</i></span>
+              <span class="skill">Sass CSS <i class="val">65%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0"
                   aria-valuemax="100">
                 </div>
               </div>
@@ -220,54 +246,63 @@
             </div>
 
             <div class="progress">
-              <span class="skill">Blazor <i class="val">65%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0"
-                  aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Administración T.I. <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-                  aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Soporte Web Master <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                  aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">MySQLi <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-                  aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">SQL Server<i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-                  aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">MongoDB <i class="val">75%</i></span>
+              <span class="skill">C# <i class="val">75%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                  aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Blazor <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                  aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Administración T.I. <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                  aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Soporte Web Master <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                  aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">MySQLi <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                  aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">SQL Server<i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                  aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">MongoDB <i class="val">65%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0"
                   aria-valuemax="100">
                 </div>
               </div>
@@ -287,27 +322,27 @@
             </div>
 
             <div class="progress">
-              <span class="skill">Boostrap 5 <i class="val">90%</i></span>
+              <span class="skill">Bootstrap 5 <i class="val">75%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
                   aria-valuemax="100">
                 </div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">GIT <i class="val">80%</i></span>
+              <span class="skill">GIT <i class="val">75%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
                   aria-valuemax="100">
                 </div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">GitHub <i class="val">90%</i></span>
+              <span class="skill">GitHub <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
                   aria-valuemax="100">
                 </div>
               </div>
@@ -341,7 +376,7 @@
             </div>
 
             <div class="progress">
-              <span class="skill">Mantenimiento de computo <i class="val">90%</i></span>
+              <span class="skill">Mantenimiento de cómputo <i class="val">90%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
                   aria-valuemax="100">
@@ -350,25 +385,7 @@
             </div>
 
             <div class="progress">
-              <span class="skill">Personal a cargo <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                  aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Docencia Matemáticas <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-                  aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Scrumm Master <i class="val">75%</i></span>
+              <span class="skill">Personal a cargo <i class="val">75%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
                   aria-valuemax="100">
@@ -377,7 +394,7 @@
             </div>
 
             <div class="progress">
-              <span class="skill">Gestion y liderazgo de proyectos <i class="val">85%</i></span>
+              <span class="skill">Docencia Matemáticas <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
                   aria-valuemax="100">
@@ -386,9 +403,36 @@
             </div>
 
             <div class="progress">
-              <span class="skill">Office <i class="val">85%</i></span>
+              <span class="skill">Scrum Master <i class="val">70%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                  aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Jira <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                  aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Gestión y liderazgo de proyectos <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                  aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Office <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
                   aria-valuemax="100">
                 </div>
               </div>
@@ -407,30 +451,28 @@
 
         <div class="row p-3">
 
-          <h3 class="resume-title">Educación</h3>
+          <h3 class="resume-title" data-i18n="resume_educacion">Educación</h3>
           <div class="resume-item">
-            <h4>Tecnólogo en Análisis &amp; Desarrollo de Sistemas de Información</h4>
+            <h4 data-i18n="edu_titulo1">Tecnólogo en Análisis &amp; Desarrollo de Sistemas de Información</h4>
             <h5>2012 - 2015</h5>
             <p><em>Centro de Biotecnología SENA Palmira - Valle del Cauca</em></p>
-            <p>Una excelente educación de alto nivel en desarrollo de aplicaciones web, Haber
-              estudiado en el SENA me
-              dio la oportunidad de encontrar una profesión por la cual apasionarme. </p>
+            <p data-i18n="edu_parrafo1">Cuento con una formación técnica de alto nivel en el desarrollo de aplicaciones web. Mi paso por el SENA fue una experiencia fundamental que me permitió descubrir mi vocación y pasión por la tecnología.</p>
 
           </div>
 
           <div class="resume-item">
-            <h4>Ingeniería de Sistemas</h4>
-            <h5>2016 - 2018 (En pausa, Me faltan 2 semestres por cursar.)</h5>
-            <p><em>Universidad nacional Abierta y a Distancia UNAD</em></p>
-            <p>Tuve la oportunidad de ingresar a esta universidad con opción de homologar 4
-              semestres con lo que había
-              estudiado en el SENA, Poder estudiar de manera virtual me ayudo a explotar aún más mis
-              habilidades
-              autodidactas y trabajar al mismo tiempo.</p>
+            <h4 data-i18n="edu_titulo2">Ingeniería de Sistemas</h4>
+            <h5>2016 - 2018 <em data-i18n="edu_pausa">(En pausa — faltan dos semestres por cursar)</em></h5>
+            <p><em>Universidad Nacional Abierta y a Distancia (UNAD)</em></p>
+            <p data-i18n="edu_parrafo2">
+            Tuve la oportunidad de ingresar a esta universidad con la opción de homologar cuatro semestres gracias a mis estudios previos en el SENA.  
+            La modalidad virtual me permitió potenciar mis habilidades autodidactas y continuar desarrollándome profesionalmente mientras trabajaba.
+            </p>
+
           </div>
 
           <div class="resume-item">
-            <h4>Cursos complementarios</h4>
+            <h4 data-i18n="edu_titulo3">Cursos complementarios</h4>
             <h5>2016 - hasta el presente</h5>
             <p><em>- Básico Corel Draw (Dictado por el SENA)</em></p>
             <p><em>- Excel Avanzado (Dictado por el SENA)</em></p>
@@ -445,11 +487,11 @@
             <p><em>- SEO Google Search Console (Dictado por Udemy)</em></p>
             <p><em>- Boostrap 5 (Dictado por Udemy)</em></p>
             <p><em>- Marketing e Mail Masivo (Dictado por Udemy)</em></p>
-            <p>Tuve la oportunidad de recibir varias capacitaciones cuando trabajaba en Carvajal
+            <p data-i18n="edu_parrafo3">Tuve la oportunidad de recibir varias capacitaciones cuando trabajaba en Carvajal
               Espacios S.A.S. debido
               a mis
-              funcionalidades de administración y gestión tecnología como Jefe del área de Sistemas.
-              <br><br>Después de salir de Carvajal Espacios S.A.S. continue mejorando mi
+              funcionalidades de administración y gestión tecnológica como Jefe del área de Sistemas.
+              <br><br>Después de salir de Carvajal Espacios S.A.S. continué mejorando mi
               conocimiento con aprendizaje
               autodidacta.
             </p>
@@ -468,76 +510,79 @@
 
         </div>
         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-          <h3 class="resume-title">Experiencia Profesional</h3>
+          <h3 class="resume-title" data-i18n="resume_experiencia">Experiencia Profesional</h3>
           <div class="resume-item">
-            <h4>Analista de sistemas T.I.</h4>
+            <h4 data-i18n="exp_titulo1">Analista de sistemas T.I.</h4>
             <h5>2016 - 2018</h5>
             <p><em>Carvajal Espacios S.A.S.</em></p>
             <ul>
-              <li>Administrar Licencias ERP Oracle, Office 365, Dominios Web, Accesos Sites
+              <li data-i18n="exp_item1">Administrar Licencias ERP Oracle, Office 365, Dominios Web, Accesos Sites
                 Sharepoint, Proveedores
                 Tecnológicos.</li>
-              <li>Compra, soporte y garantías de PC's, Impresoras, Proyectores, Access Point y
+              <li data-i18n="exp_item2">Compra, soporte y garantías de PC's, Impresoras, Proyectores, Access Point y
                 Telefonía
                 Fija.</li>
-              <li>Administración y pagos de Telefonía fija y móvil.</li>
-              <li>Aprobación de asignación de licencias ERP Oracle, Office 365, Perfiles de
+              <li data-i18n="exp_item3">Administración y pagos de Telefonía fija y móvil.</li>
+              <li data-i18n="exp_item4">Aprobación de asignación de licencias ERP Oracle, Office 365, Perfiles de
                 navegación y Claves de
                 llamadas telefónicas.</li>
-              <li>Negociaciones tecnológicas y pagos a proveedores, Monitoreos de red, Atención de
+              <li data-i18n="exp_item5">Negociaciones tecnológicas y pagos a proveedores, Monitoreos de red, Atención de
                 auditorías, Creación
                 de instructivos de trabajo en T.I.</li>
-              <li>Gestión de proyectos Tecnológicos.</li>
-              <li>Gestión de contratos Leasing para adquisición de computadores.</li>
+              <li data-i18n="exp_item6">Gestión de proyectos Tecnológicos.</li>
+              <li data-i18n="exp_item7">Gestión de contratos Leasing para adquisición de computadores.</li>
             </ul>
           </div>
           <div class="resume-item">
-            <h4>Desarrollador web FullStack</h4>
+            <h4 data-i18n="exp_titulo2">Desarrollador Web Full Stack</h4>
             <h5>2018 - 2020</h5>
             <p><em>Buhodemica S.A.S.</em></p>
-            <p><strong>www.buhodemica.com</strong> fue un
-              proyecto personal por
-              crear una plataforma educativa que brindara un rango amplio
-              de funcionalidades que la competencia no poseía, Como proyecto personal
-              haciéndome cargo absolutamente de todo.</p>
+            <p data-i18n="exp_parrafo_buhodemica">
+            <strong>www.buhodemica.com</strong>
+            fue un proyecto personal que dio origen a una empresa legalmente constituida.
+            Su objetivo fue crear una plataforma educativa innovadora, con un amplio rango de funcionalidades que superaran las ofrecidas por la competencia.
+            Como fundador y único desarrollador, asumí la responsabilidad total del análisis, desarrollo, implementación y gestión del proyecto.
+            </p>
+
             <ul>
-              <li>Análisis de mercadeo.</li>
-              <li>Análisis de requerimientos.</li>
-              <li>Diseño y Desarrollo Frontend (HTML y CSS3).</li>
-              <li>Desarrollo Backend (PHP y SQL)</li>
-              <li>Configuración del servidor web y Subida del código del sitio.</li>
-              <li>Desarrollos y mejoras continuas.</li>
-              <li>Soporte.</li>
-              <li>Creación de empresa legalmente constituida.</li>
-              <li>Marketing Digital y Mercadeo.</li>
-              <li>Búsqueda de clientes y venta del servicio.</li>
+              <li data-i18n="exp_buh_item1">Análisis de mercado y definición del modelo de negocio.</li>
+              <li data-i18n="exp_buh_item2">Levantamiento y documentación de requerimientos.</li>
+              <li data-i18n="exp_buh_item3">Diseño y desarrollo <strong>Frontend</strong> (HTML5, CSS3).</li>
+              <li data-i18n="exp_buh_item4">Desarrollo <strong>Backend</strong> (PHP, SQL).</li>
+              <li data-i18n="exp_buh_item5">Configuración, despliegue y mantenimiento del servidor web.</li>
+              <li data-i18n="exp_buh_item6">Desarrollo de nuevas funcionalidades y mejoras continuas.</li>
+              <li data-i18n="exp_buh_item7">Soporte técnico y atención a usuarios.</li>
+              <li data-i18n="exp_buh_item8">Constitución legal de la empresa y gestión administrativa básica.</li>
+              <li data-i18n="exp_buh_item9">Estrategias de <strong>marketing digital</strong> y posicionamiento en línea.</li>
+              <li data-i18n="exp_buh_item10">Prospección de clientes y venta directa del servicio.</li>
             </ul>
+
           </div>
 
           <div class="resume-item">
-            <h4>Docente Matemáticas</h4>
-            <h5>Abril 2019 - Enero 2022.</h5>
+            <h4 data-i18n="exp_titulo3">Docente de Matemáticas</h4>
+            <h5>Abril 2019 - Enero 2022</h5>
             <p><em>Instituto Gabriela Mistral</em></p>
             <ul>
-              <li>Dictar clases de Matemáticas, Calculo, Geometría, Física aplicada y Estadística.
-              </li>
-              <li>Elaborar Malla Curricular del área de Matemáticas.</li>
-              <li>Manejo de estudiantes de 6to a 11vo Grado.</li>
+              <li data-i18n="exp_doc_item1">Impartí clases de <strong>Matemáticas</strong>, <strong>Cálculo</strong>, <strong>Geometría</strong>, <strong>Física Aplicada</strong> y <strong>Estadística</strong> en niveles de 6.º a 11.º grado.</li>
+              <li data-i18n="exp_doc_item2">Diseñé y elaboré la <strong>malla curricular</strong> del área de Matemáticas, adaptándola a los lineamientos académicos institucionales.</li>
+              <li data-i18n="exp_doc_item3">Fomenté el pensamiento lógico y analítico a través de metodologías dinámicas y orientadas a la resolución de problemas.</li>
             </ul>
           </div>
 
           <div class="resume-item">
-            <h4>Desarrollador Jr</h4>
+            <h4 data-i18n="exp_titulo4">Desarrollador Jr</h4>
             <h5>Enero 2022 - Hasta la actualidad</h5>
             <p><em>Sistemas de Información Empresarial S.A.</em></p>
             <ul>
-              <li>Desarrollador Backend en C#</li>
-              <li>Desarrollador Front dinamico con componentes en C# y Blazor</li>
-              <li>Pruebas unitarias con Unit Test</li>
-              <li>Implementación de Json para manejo de datos</li>
-              <li>Manejo de Git y Gitlab</li>
-              <li>Solucion de issues</li>
-              <li>Documentación de los desarrollos</li>
+              <li data-i18n="exp_js_item1">Desarrollador Backend especializado en <strong>C#</strong> y la plataforma <strong>.NET</strong>, con enfoque en rendimiento, escalabilidad y mantenibilidad del código.</li>
+              <li data-i18n="exp_js_item2">Aplicación de buenas prácticas de desarrollo como <strong>Clean Code</strong>, <strong>KISS</strong>, <strong>SOLID</strong> y principios de diseño orientados a la escritura de código limpio, legible y eficiente.</li>
+              <li data-i18n="exp_js_item3">Desarrollo Frontend dinámico mediante componentes en <strong>C#</strong> y <strong>Blazor</strong>, priorizando la experiencia de usuario y la reutilización de componentes.</li>
+              <li data-i18n="exp_js_item4">Diseño y ejecución de <strong>pruebas unitarias</strong> utilizando <strong>xUnit</strong> y <strong>NUnit</strong> para asegurar la calidad y estabilidad del software.</li>
+              <li data-i18n="exp_js_item5">Integración y consumo de <strong>APIs REST</strong> mediante el manejo de datos en formato <strong>JSON</strong>, garantizando una comunicación eficiente entre servicios.</li>
+              <li data-i18n="exp_js_item6">Gestión de control de versiones con <strong>Git</strong> y <strong>GitLab</strong>, incluyendo ramas, revisiones de código (merge requests) y despliegues controlados.</li>
+              <li data-i18n="exp_js_item7">Identificación, análisis y solución de <strong>issues</strong> técnicos, asegurando la continuidad del desarrollo y la mejora continua del producto.</li>
+              <li data-i18n="exp_js_item8">Elaboración de <strong>documentación técnica</strong> en <strong>Word</strong> y <strong>Markdown</strong>, facilitando la comprensión, mantenimiento y escalabilidad de los proyectos.</li>
             </ul>
           </div>
         </div>
@@ -551,43 +596,43 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Posibles cargos a ocupar</h2>
+          <h2 data-i18n="services_titulo">Posibles cargos a ocupar</h2>
         </div>
 
         <div class="row">
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
             <div class="icon"><i class='bx bxs-file-css'></i></i></div>
-            <h4 class="title"><a href="">Desarrollador Frontend</a></h4>
-            <p class="description">Amplias habilidades en Corel Draw, CSS3, Boostrap 5, Uso de
+            <h4 class="title"><a href="" data-i18n="service_front">Desarrollador Frontend</a></h4>
+            <p class="description" data-i18n="service_front_desc">Amplias habilidades en Corel Draw, CSS3, Boostrap 5, Uso de
               iconos y diferentes
               materiales de diseño que me permitirán desarrollar entornos web adaptativos y
               amigables.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
             <div class="icon"><i class='bx bx-code-alt'></i></div>
-            <h4 class="title"><a href="">Desarrollador Backend</a></h4>
-            <p class="description">Con uso de lenguajes como PHP Estructurado, PDO y POO, C#,
+            <h4 class="title"><a href="" data-i18n="service_back">Desarrollador Backend</a></h4>
+            <p class="description" data-i18n="service_back_desc">Con uso de lenguajes como PHP Estructurado, PDO y POO, C#,
               JavaScript y NodeJS con una gran capacidad lógica cumpliré con las expectativas de
               funcionalidad.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
             <div class="icon"><i class='bx bxs-cylinder'></i></div>
-            <h4 class="title"><a href="">Analista de Datos y uso de SQL</a></h4>
-            <p class="description">Con mi amplia capacidad de analisis de datos podré atender
+            <h4 class="title"><a href="" data-i18n="service_data">Analista de Datos y uso de SQL</a></h4>
+            <p class="description" data-i18n="service_data_desc">Con mi amplia capacidad de análisis de datos podré atender
               solicitudes de soporte y
               desarrollo haciendo uso de bases de datos SQL.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
             <div class="icon"><i class='bx bxs-user-voice'></i></div>
-            <h4 class="title"><a href="">Marketing digital</a></h4>
-            <p class="description">Aunque mi experiencia en este campo no sea amplia, puedo detectar
+            <h4 class="title"><a href="" data-i18n="service_marketing">Marketing digital</a></h4>
+            <p class="description" data-i18n="service_marketing_desc">Aunque mi experiencia en este campo no sea amplia, puedo detectar
               fallas operativas y
               de publicidad para aplicar correcciones buscando estrategias orientadas a las TIC.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
             <div class="icon"><i class='bx bx-line-chart'></i></i></div>
-            <h4 class="title"><a href="">Analista de desarrollo</a></h4>
-            <p class="description">Con mi amplia experiencia y capacidad de análisis puedo
+            <h4 class="title"><a href="" data-i18n="service_analista">Analista de desarrollo</a></h4>
+            <p class="description" data-i18n="service_analista_desc">Con mi amplia experiencia y capacidad de análisis puedo
               identificar requerimientos
               para el desarrollo de aplicaciones teniendo en cuenta implicación de tiempo, costos y
               niveles de
@@ -595,8 +640,8 @@
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
             <div class="icon"><i class='bx bxs-briefcase-alt-2'></i></div>
-            <h4 class="title"><a>Coordinador T.I.</a></h4>
-            <p class="description">Con 3 años de experiencia a cargo del área tecnológica de una
+            <h4 class="title"><a data-i18n="service_coord">Coordinador T.I.</a></h4>
+            <p class="description" data-i18n="service_coord_desc">Con 3 años de experiencia a cargo del área tecnológica de una
               multinacional puedo
               asegurar completa satisfacción en este tipo de cargos, manejando personal, liderando
               proyectos y
@@ -608,13 +653,12 @@
       </div>
     </section><!-- End Services Section -->
 
-
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact px-xl-3 px-xxl-5">
       <div class="container">
 
         <div class="section-title">
-          <h2>Contacto</h2>
+          <h2 data-i18n="contact_titulo">Contacto</h2>
         </div>
 
         <div class="row" data-aos="fade-in">
@@ -623,20 +667,20 @@
             <div class="info">
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
-                <h4>Ubicacion:</h4>
-                <p>El Cerrito (Valle del Cauca - Colombia)</p>
+                <h4 data-i18n="contact_ubicacion_t">Ubicación:</h4>
+                <p data-i18n="contact_ubicacion">El Cerrito (Valle del Cauca - Colombia)</p>
               </div>
 
               <div class="email">
                 <i class="bi bi-envelope"></i>
-                <h4>Correo:</h4>
-                <p>jsvanegas2014@gmail.com / dcodewebs@gmail.com</p>
+                <h4 data-i18n="contact_correo_t">Correo:</h4>
+                <p>jsvanegas2014@gmail.com</p>
               </div>
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
-                <h4>Whatsapp:</h4>
-                <p>+57 312 4264 832</p>
+                <h4 data-i18n="contact_whatsapp_t">Whatsapp:</h4>
+                <p data-i18n="contact_whatsapp">+57 312 4264 832</p>
               </div>
 
               <iframe
@@ -659,7 +703,7 @@
   <footer id="footer">
     <div class="container">
       <div class="credits">
-        <p>Portafolio de servicios Sebastian Vanegas</p>
+        <p data-i18n="footer_text">Portafolio de servicios - Sebastian Vanegas</p>
       </div>
     </div>
   </footer><!-- End  Footer -->
@@ -681,5 +725,4 @@
   <script src="assets/js/scripts.js"></script>
 
 </body>
-
 </html>
