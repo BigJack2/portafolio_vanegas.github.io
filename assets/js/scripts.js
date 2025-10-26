@@ -22,6 +22,7 @@ const TRANSLATIONS = {
     nav_servicios: "Servicios",
     nav_contacto: "Contacto",
     nav_descargar: "Descargar HV",
+    nav_disc: "Descargar perfil DISC",
 
     // Hero
     hero_soy: "Soy",
@@ -136,6 +137,7 @@ const TRANSLATIONS = {
     nav_servicios: "Services",
     nav_contacto: "Contact",
     nav_descargar: "Download CV",
+    nav_disc: "Download DISC profile",
 
     // Hero
     hero_soy: "I am",
