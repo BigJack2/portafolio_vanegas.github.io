@@ -99,10 +99,11 @@ const TRANSLATIONS = {
     exp_js_item3: "Desarrollo Frontend dinámico con componentes en C# y Blazor, priorizando la experiencia de usuario.",
     exp_js_item4: "Pruebas unitarias con xUnit y NUnit para garantizar calidad y estabilidad.",
     exp_js_item5: "Integración y consumo de APIs REST usando JSON.",
-    exp_js_item6: "Gestión de versiones con Git y GitLab, incluyendo revisiones y despliegues controlados.",
-    exp_js_item7: "Identificación, análisis y resolución de issues técnicos.",
-    exp_js_item8: "Documentación técnica en Word y Markdown para facilitar mantenimiento y escalabilidad.",
-
+    exp_js_item6: "Integración de soluciones de Inteligencia Artificial en un sistema ERP, orientadas al procesamiento de prompts de código y análisis automatizado de hojas de vida.",
+    exp_js_item7: "Gestión de versiones con Git y GitLab, incluyendo revisiones y despliegues controlados.",
+    exp_js_item8: "Identificación, análisis y resolución de issues técnicos.",
+    exp_js_item9: "Documentación técnica en Word y Markdown para facilitar mantenimiento y escalabilidad.",
+    exp_js_item10: "Trabajo bajo metodologías ágiles (Scrum) y backlog mediante Jira.",
     // Services
     services_titulo: "Posibles cargos a ocupar",
     service_front: "Desarrollador Frontend",
@@ -214,9 +215,11 @@ const TRANSLATIONS = {
     exp_js_item3: "Dynamic frontend development with C# components and Blazor, prioritizing user experience.",
     exp_js_item4: "Unit testing with xUnit and NUnit to ensure quality and stability.",
     exp_js_item5: "Integration and consumption of REST APIs using JSON.",
-    exp_js_item6: "Version control with Git and GitLab, including code reviews and controlled deployments.",
-    exp_js_item7: "Identification, analysis and resolution of technical issues.",
-    exp_js_item8: "Technical documentation in Word and Markdown to facilitate maintenance and scalability.",
+    exp_js_item6: "Integration of Artificial Intelligence solutions into an ERP system, focused on processing code prompts and automated analysis of resumes.",
+    exp_js_item7: "Version control with Git and GitLab, including code reviews and controlled deployments.",
+    exp_js_item8: "Identification, analysis and resolution of technical issues.",
+    exp_js_item9: "Technical documentation in Word and Markdown to facilitate maintenance and scalability.",
+    exp_js_item10: "Work under agile methodologies (Scrum) and backlog using Jira.",
 
     // Services
     services_titulo: "Possible Roles",
