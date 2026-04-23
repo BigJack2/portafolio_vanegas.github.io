@@ -117,47 +117,94 @@
 
         <div class="section-title">
           <h2 data-i18n="about_titulo">Acerca</h2>
-          <p data-i18n="about_parrafo">Soy una persona respetuosa y confiable, Buscando siempre superarme para brindar las mejores soluciones tecnológicas, Comprometido con las metas propiciando el liderazgo para un mejor avance de los proyectos establecidos.</p>
+          <p data-i18n="about_parrafo">Especializado en C#, .NET y Blazor. +4 años construyendo sistemas empresariales robustos, con foco en calidad, rendimiento y buenas prácticas.</p>
         </div>
 
-        <div class="row">
+        <div class="row align-items-center gy-4">
+
+          <!-- Foto + stats -->
           <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile-img-2.jpg" class="img-fluid" alt="Sebastian Vanegas">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3 data-i18n="about_rol">Desarrollador Frontend/Backend, Diseñador web &amp; Analista.</h3>
-            <p class="fst-italic" data-i18n="about_experiencia">
-              Cuento con una amplia experiencia adquirida mediante el desarrollo de proyectos personales complejos y más de cuatro años de trabajo en Siesa, empresa de software especializada en soluciones empresariales, donde he participado en el desarrollo y mejora continua de un ERP robusto y de alto nivel técnico.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about_whatsapp">Whatsapp:</strong> <span>+57 312 426 4832</span>
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about_ubicacion">Ubicación:</strong> <span>El
-                      Cerrito (Valle del Cauca - Colombia)</span>
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about_edad">Edad:</strong> <span id="edad"></span>
-                  </li>
-                </ul>
+            <div class="about-img-wrapper">
+              <img src="assets/img/profile-img-2.jpg" class="img-fluid" alt="Sebastian Vanegas">
+              <span class="about-availability-badge">
+                <i class="bi bi-circle-fill"></i>
+                <span data-i18n="about_disponible">Disponible</span>
+              </span>
+            </div>
+            <div class="about-stats-row">
+              <div class="about-stat-item">
+                <span class="about-stat-num">+4</span>
+                <span class="about-stat-lbl" data-i18n="about_stat_exp">años de experiencia</span>
               </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about_grado">Nivel:</strong> <span data-i18n="about_grado_valor">Desarrollador
-                      Semi-Senior</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about_correo">Correo:</strong>
-                    <span>jsvanegas2014@gmail.com</span>
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about_freelance">Freelance:</strong>
-                    <span data-i18n="about_disponible">Disponible</span>
-                  </li>
-                </ul>
+              <div class="about-stat-item">
+                <span class="about-stat-num">5</span>
+                <span class="about-stat-lbl" data-i18n="about_stat_proj">proyectos destacados</span>
               </div>
             </div>
-            <p data-i18n="about_disponibilidad">
-              Disponibilidad para cambio de residencia dentro y fuera del país.
-            </p>
           </div>
+
+          <!-- Contenido -->
+          <div class="col-lg-8 content" data-aos="fade-left">
+            <h3 data-i18n="about_rol">Desarrollador Backend · C# &amp; .NET · Blazor · PHP</h3>
+            <p class="fst-italic" data-i18n="about_experiencia">
+              Más de cuatro años en Siesa contribuyendo al desarrollo de un ERP empresarial de alto nivel técnico: APIs REST, pruebas unitarias con xUnit, integración de IA y flujos ágiles con GitLab y Jira. También fundé y desarrollé en solitario Buhodemica S.A.S., plataforma educativa full-stack.
+            </p>
+
+            <div class="row gy-1">
+              <div class="col-sm-6">
+                <div class="about-info-item">
+                  <i class="bi bi-whatsapp"></i>
+                  <div>
+                    <strong data-i18n="about_whatsapp">WhatsApp</strong>
+                    <a href="https://wa.me/+573124264832" target="_blank" rel="noopener noreferrer">+57 312 426 4832</a>
+                  </div>
+                </div>
+                <div class="about-info-item">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <div>
+                    <strong data-i18n="about_ubicacion">Ubicación</strong>
+                    <span>El Cerrito (Valle del Cauca)</span>
+                  </div>
+                </div>
+                <div class="about-info-item">
+                  <i class="bi bi-calendar3"></i>
+                  <div>
+                    <strong data-i18n="about_edad">Edad</strong>
+                    <span id="edad"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="about-info-item">
+                  <i class="bi bi-award-fill"></i>
+                  <div>
+                    <strong data-i18n="about_grado">Nivel</strong>
+                    <span data-i18n="about_grado_valor">Desarrollador Semi-Senior</span>
+                  </div>
+                </div>
+                <div class="about-info-item">
+                  <i class="bi bi-envelope-fill"></i>
+                  <div>
+                    <strong data-i18n="about_correo">Correo</strong>
+                    <a href="mailto:jsvanegas2014@gmail.com">jsvanegas2014@gmail.com</a>
+                  </div>
+                </div>
+                <div class="about-info-item">
+                  <i class="bi bi-briefcase-fill"></i>
+                  <div>
+                    <strong data-i18n="about_freelance">Freelance</strong>
+                    <span class="about-freelance-badge" data-i18n="about_disponible">Disponible</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-note mt-3">
+              <i class="bi bi-airplane-fill"></i>
+              <span data-i18n="about_disponibilidad">Disponible para reubicación nacional e internacional.</span>
+            </div>
+          </div>
+
         </div>
 
       </div>

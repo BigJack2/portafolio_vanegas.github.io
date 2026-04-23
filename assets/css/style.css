@@ -338,29 +338,150 @@ section {
 --------------------------------------------------------------*/
 .about .content h3 {
   font-weight: 700;
-  font-size: 26px;
+  font-size: 22px;
   color: #173b6c;
-}
-.about .content ul {
-  list-style: none;
-  padding: 0;
-}
-.about .content ul li {
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-}
-.about .content ul strong {
-  margin-right: 10px;
-}
-.about .content ul i {
-  font-size: 16px;
-  margin-right: 5px;
-  color: #149ddd;
-  line-height: 0;
+  margin-bottom: 12px;
 }
 .about .content p:last-child {
   margin-bottom: 0;
+}
+
+/* About — image wrapper */
+.about-img-wrapper {
+  position: relative;
+  display: block;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.14);
+}
+.about-img-wrapper img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.about-img-wrapper:hover img {
+  transform: scale(1.03);
+}
+.about-availability-badge {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  background: #25d366;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 3px 12px rgba(37, 211, 102, 0.5);
+  letter-spacing: 0.3px;
+  pointer-events: none;
+}
+.about-availability-badge i {
+  font-size: 8px;
+  animation: about-pulse 1.8s ease-in-out infinite;
+}
+@keyframes about-pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.25; }
+}
+
+/* About — stats row */
+.about-stats-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+.about-stat-item {
+  flex: 1;
+  background: #f4f9fd;
+  border: 1px solid rgba(20, 157, 221, 0.18);
+  border-radius: 10px;
+  padding: 14px 8px;
+  text-align: center;
+}
+.about-stat-num {
+  display: block;
+  font-size: 28px;
+  font-weight: 800;
+  color: #149ddd;
+  line-height: 1;
+}
+.about-stat-lbl {
+  display: block;
+  font-size: 10.5px;
+  color: #6c757d;
+  margin-top: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* About — info items */
+.about-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.about-info-item > i {
+  font-size: 17px;
+  color: #149ddd;
+  margin-top: 3px;
+  flex-shrink: 0;
+  width: 20px;
+}
+.about-info-item > div {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.35;
+}
+.about-info-item strong {
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #999;
+  font-weight: 700;
+}
+.about-info-item span,
+.about-info-item a {
+  font-size: 14px;
+  color: #1a1a2e;
+  text-decoration: none;
+}
+.about-info-item a:hover {
+  color: #149ddd;
+}
+
+/* About — freelance badge */
+.about-freelance-badge {
+  display: inline-block;
+  background: rgba(37, 211, 102, 0.12);
+  color: #1a9b4e;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 12px;
+}
+
+/* About — relocation note */
+.about-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(20, 157, 221, 0.06);
+  border-left: 3px solid #149ddd;
+  border-radius: 0 8px 8px 0;
+  padding: 10px 16px;
+  font-size: 13.5px;
+  color: #555;
+}
+.about-note > i {
+  color: #149ddd;
+  font-size: 16px;
+  flex-shrink: 0;
 }
 
 /*--------------------------------------------------------------
@@ -707,7 +828,7 @@ section {
 .service-card-icon {
   width: 62px;
   height: 62px;
-  background: linear-gradient(135deg, #149ddd 0%, #0e79b2 100%);
+  background: #149ddd;
   border-radius: 14px;
   display: flex;
   align-items: center;
