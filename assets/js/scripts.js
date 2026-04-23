@@ -6,6 +6,7 @@ const TRANSLATIONS = {
     nav_acerca: "Acerca",
     nav_experiencia: "Experiencia",
     nav_servicios: "Servicios",
+    nav_proyectos: "Proyectos",
     nav_contacto: "Contacto",
     nav_descargar: "Descargar HV",
     nav_disc: "Descargar perfil DISC",
@@ -16,7 +17,7 @@ const TRANSLATIONS = {
 
     // About
     about_titulo: "Acerca",
-    about_parrafo: "Soy una persona respetuosa y confiable, buscando siempre superarme para brindar las mejores soluciones tecnológicas. Comprometido con las metas y promoviendo el liderazgo para el mejor avance de los proyectos.",
+    about_parrafo: "Desarrollador Backend con más de cuatro años de experiencia en sistemas ERP empresariales, especializado en C# y .NET. He contribuido a la integración de soluciones de IA en producción, desarrollo de módulos con alta cobertura de pruebas unitarias y mejora continua de un ERP de alto nivel técnico.",
     about_rol: "Desarrollador Frontend/Backend, Diseñador web & Analista.",
     about_experiencia: "Cuento con una amplia experiencia adquirida mediante el desarrollo de proyectos personales complejos y más de cuatro años de trabajo en Siesa, empresa de software especializada en soluciones empresariales, donde he participado en el desarrollo y mejora continua de un ERP robusto y de alto nivel técnico.",
     about_dn_fecha: "Fecha de nacimiento:",
@@ -25,8 +26,8 @@ const TRANSLATIONS = {
     about_estado: "Estado Civil:",
     about_soltero: "Soltero",
     about_edad: "Edad:",
-    about_grado: "Grado:",
-    about_grado_valor: "Desarrollador Junior",
+    about_grado: "Nivel:",
+    about_grado_valor: "Desarrollador Semi-Senior",
     about_correo: "Correo:",
     about_freelance: "Freelance:",
     about_disponible: "Disponible",
@@ -48,7 +49,7 @@ const TRANSLATIONS = {
     edu_pausa: "(En pausa — faltan dos semestres por cursar)",
     edu_parrafo2: "Tuve la oportunidad de ingresar a esta universidad con la opción de homologar cuatro semestres gracias a mis estudios previos en el SENA. La modalidad virtual me permitió potenciar mis habilidades autodidactas y continuar desarrollándome profesionalmente mientras trabajaba.",
     edu_titulo3: "Cursos complementarios",
-    edu_parrafo3: "Tuve la oportunidad de recibir varias capacitaciones cuando trabajaba en Carvajal Espacios S.A.S. debido a mis funcionalidades de administración y gestión tecnológica como Jefe del área de Sistemas. Después de salir de Carvajal Espacios S.A.S. continué mejorando mi conocimiento con aprendizaje autodidacta.",
+    edu_parrafo3: "Formación continua y autodidacta en tecnologías de desarrollo de software, enfocada en el ecosistema .NET, arquitecturas web modernas y buenas prácticas de ingeniería de software.",
 
     // Resume / Experience
     resume_experiencia: "Experiencia Profesional",
@@ -91,7 +92,7 @@ const TRANSLATIONS = {
     exp_js_item9: "Documentación técnica en Word y Markdown para facilitar mantenimiento y escalabilidad.",
     exp_js_item10: "Trabajo bajo metodologías ágiles (Scrum) y backlog mediante Jira.",
     // Services
-    services_titulo: "Posibles cargos a ocupar",
+    services_titulo: "Especialidades",
     service_front: "Desarrollador Frontend",
     service_front_desc: "Amplia experiencia en CorelDRAW, CSS3 y Bootstrap 5, así como en el uso de iconografía y diversos recursos de UI, lo que me permite desarrollar entornos web adaptativos, modernos y fáciles de usar.",
     service_front_desc2: "Además, cuento con dominio de frameworks como Blazor (C#) y Blade (Laravel), que me permiten crear interfaces reactivas, eficientes y orientadas a una excelente experiencia de usuario.",
@@ -117,7 +118,32 @@ const TRANSLATIONS = {
     contact_whatsapp: "+57 312 4264 832",
 
     // Footer
-    footer_text: "Portafolio de servicios - Sebastian Vanegas"
+    footer_text: "Portafolio de servicios - Sebastian Vanegas",
+
+    // Skills groups
+    skill_group_backend: "Backend",
+    skill_group_frontend: "Frontend",
+    skill_group_db: "Bases de Datos",
+    skill_group_devops: "DevOps & Herramientas",
+    skill_group_diseno: "Diseño & Marketing",
+    skill_group_mgmt: "Gestión T.I.",
+
+    // Portfolio
+    portfolio_titulo: "Proyectos destacados",
+    portfolio_parrafo: "Selección de proyectos en los que he tenido participación directa como desarrollador, fundador o líder técnico.",
+    proj_ia_titulo: "Integración de IA en ERP empresarial",
+    proj_ia_desc: "Desarrollo e integración de soluciones de Inteligencia Artificial dentro del ERP de Siesa, orientadas al procesamiento automático de prompts de código y al análisis automatizado de hojas de vida. Construido con C# y .NET.",
+    proj_buho_titulo: "Buhodemica S.A.S. — Plataforma educativa",
+    proj_buho_desc: "Plataforma educativa online fundada, diseñada y desarrollada en su totalidad. Incluyó análisis de mercado, desarrollo full-stack (PHP + SQL), configuración de servidor, marketing digital y constitución legal de la empresa.",
+    proj_github_titulo: "Repositorios en GitHub",
+    proj_github_desc: "Proyectos personales y de práctica disponibles en GitHub, incluyendo ejercicios con C#, .NET, Blazor, PHP y bases de datos. Reflejo del aprendizaje continuo y las buenas prácticas aplicadas fuera del entorno laboral.",
+    proj_erp_titulo: "Módulos ERP — Siesa",
+    proj_erp_desc: "Participación activa durante +4 años en el desarrollo y mejora continua de módulos críticos de un ERP empresarial de alto nivel técnico. Aplicando SOLID, Clean Code, pruebas unitarias, APIs REST y control de versiones con GitLab.",
+    proj_invbox_titulo: "Inventory Box — Sistema SaaS de inventario",
+    proj_invbox_desc: "Plataforma SaaS de gestión de inventario desarrollada con Laravel y Blade. Incluye gestión de productos con código QR, seguimiento de entradas/salidas, alertas de reabastecimiento, informes en Excel, roles y permisos por usuario, órdenes de compra automatizadas, control de calidad y devoluciones, y acceso multi-dispositivo. Construida con arquitectura modular, protección XSS/CSRF, 2FA y cifrado de datos.",
+
+    // About updated
+    about_grado_valor: "Desarrollador Semi-Senior"
   },
   en: {
     // Nav
@@ -125,6 +151,7 @@ const TRANSLATIONS = {
     nav_acerca: "About",
     nav_experiencia: "Experience",
     nav_servicios: "Services",
+    nav_proyectos: "Projects",
     nav_contacto: "Contact",
     nav_descargar: "Download CV",
     nav_disc: "Download DISC profile",
@@ -135,7 +162,7 @@ const TRANSLATIONS = {
 
     // About
     about_titulo: "About",
-    about_parrafo: "I am a respectful and reliable person, always striving to improve in order to deliver the best technological solutions. Committed to goals and fostering leadership to drive project progress.",
+    about_parrafo: "Backend developer with over four years of experience in enterprise ERP systems, specialized in C# and .NET. I have contributed to integrating AI solutions in production, developing modules with high unit test coverage, and continuously improving a high-level technical ERP.",
     about_rol: "Frontend/Backend Developer, Web Designer & Analyst.",
     about_experiencia: "I have broad experience gained through complex personal projects and over four years at Siesa, a software company specialized in enterprise solutions, where I contributed to the development and continuous improvement of a robust, high-level ERP.",
     about_dn_fecha: "Date of birth:",
@@ -145,7 +172,7 @@ const TRANSLATIONS = {
     about_soltero: "Single",
     about_edad: "Age:",
     about_grado: "Level:",
-    about_grado_valor: "Junior Developer",
+    about_grado_valor: "Semi-Senior Developer",
     about_correo: "Email:",
     about_freelance: "Freelance:",
     about_disponible: "Available",
@@ -211,7 +238,7 @@ const TRANSLATIONS = {
     exp_js_item10: "Work under agile methodologies (Scrum) and backlog using Jira.",
 
     // Services
-    services_titulo: "Possible Roles",
+    services_titulo: "Specialties",
     service_front: "Frontend Developer",
     service_front_desc: "Extensive experience in CorelDRAW, CSS3 and Bootstrap 5, as well as in the use of iconography and various UI resources, which allows me to develop responsive, modern and easy-to-use web environments.",
     service_front_desc2: "Additionally, I have proficiency in frameworks such as Blazor (C#) and Blade (Laravel), enabling me to create reactive, efficient interfaces focused on excellent user experience.",
@@ -237,7 +264,32 @@ const TRANSLATIONS = {
     contact_whatsapp: "+57 312 4264 832",
 
     // Footer
-    footer_text: "Sebastian Vanegas - Services Portfolio"
+    footer_text: "Sebastian Vanegas - Services Portfolio",
+
+    // Skills groups
+    skill_group_backend: "Backend",
+    skill_group_frontend: "Frontend",
+    skill_group_db: "Databases",
+    skill_group_devops: "DevOps & Tools",
+    skill_group_diseno: "Design & Marketing",
+    skill_group_mgmt: "IT Management",
+
+    // Portfolio
+    portfolio_titulo: "Featured Projects",
+    portfolio_parrafo: "A selection of projects where I had direct participation as developer, founder or technical lead.",
+    proj_ia_titulo: "AI Integration in Enterprise ERP",
+    proj_ia_desc: "Development and integration of Artificial Intelligence solutions within the Siesa ERP, focused on automated processing of code prompts and automated analysis of resumes. Built with C# and .NET.",
+    proj_buho_titulo: "Buhodemica S.A.S. — Educational Platform",
+    proj_buho_desc: "Online educational platform founded, designed and developed entirely from scratch. Included market analysis, full-stack development (PHP + SQL), server setup, digital marketing and legal incorporation.",
+    proj_github_titulo: "GitHub Repositories",
+    proj_github_desc: "Personal and practice projects available on GitHub, including exercises with C#, .NET, Blazor, PHP and databases. A reflection of continuous learning and best practices applied outside of work.",
+    proj_erp_titulo: "ERP Modules — Siesa",
+    proj_erp_desc: "Active involvement for 4+ years in the development and continuous improvement of critical modules of a high-level enterprise ERP. Applying SOLID, Clean Code, unit testing, REST APIs and version control with GitLab.",
+    proj_invbox_titulo: "Inventory Box — SaaS Inventory System",
+    proj_invbox_desc: "SaaS inventory management platform built with Laravel and Blade. Features product management with QR codes, stock entries/exits tracking, restock alerts, Excel reports, role-based user permissions, automated purchase orders, quality control and returns, and multi-device access. Built with modular architecture, XSS/CSRF protection, 2FA and data encryption.",
+
+    // About updated
+    about_grado_valor: "Semi-Senior Developer"
   }
 };
 

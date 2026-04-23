@@ -365,36 +365,38 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
-}
-.skills .progress .skill {
-  padding: 0;
-  margin: 0 0 6px 0;
+.skills .skill-group-title {
+  font-size: 14px;
+  font-weight: 700;
   text-transform: uppercase;
-  display: block;
-  font-weight: 600;
+  color: #149ddd;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
 }
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
-.skills .progress-bar-wrap {
-  background: #dce8f8;
-  height: 10px;
+.skill-tag {
+  display: inline-block;
+  background: #e8f4fb;
+  color: #0d7ab5;
+  border: 1px solid #b0d9f0;
+  border-radius: 20px;
+  padding: 4px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  transition: background 0.2s, color 0.2s;
 }
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: #149ddd;
+.skill-tag:hover {
+  background: #149ddd;
+  color: #fff;
+  border-color: #149ddd;
 }
 
 /*--------------------------------------------------------------
