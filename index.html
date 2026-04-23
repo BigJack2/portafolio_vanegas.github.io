@@ -484,43 +484,56 @@
 
         <div class="section-title">
           <h2 data-i18n="contact_titulo">Contacto</h2>
+          <p data-i18n="contact_subtitulo">¿Tienes un proyecto en mente? Estoy disponible para colaborar. No dudes en escribirme.</p>
         </div>
 
-        <div class="row" data-aos="fade-in">
+        <div class="row gy-4" data-aos="fade-in">
 
-          <div class="col-lg-12 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4 data-i18n="contact_ubicacion_t">Ubicación:</h4>
-                <p data-i18n="contact_ubicacion">El Cerrito (Valle del Cauca - Colombia)</p>
+          <!-- Ubicación -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <i class="bi bi-geo-alt-fill"></i>
               </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4 data-i18n="contact_correo_t">Correo:</h4>
-                <p>jsvanegas2014@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <a href="https://wa.me/+573124264832" target="_blank">
-                  <i class="bi bi-whatsapp"></i>
-                  <h4 data-i18n="contact_whatsapp_t">Whatsapp:</h4>
-                  <p>
-                    <span style="font-size:0.95em;color:#333;">+57 312 4264 832</span>
-                  </p>
-                </a>
-              </div>
-
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7963.182610731235!2d-76.30417438183629!3d3.6800766864045085!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1637878134697!5m2!1ses!2sco"
-                frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen=""
-                loading="lazy"></iframe>
-
+              <h4 data-i18n="contact_ubicacion_t">Ubicación</h4>
+              <p data-i18n="contact_ubicacion">El Cerrito (Valle del Cauca - Colombia)</p>
             </div>
-
           </div>
 
+          <!-- Correo -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <a href="mailto:jsvanegas2014@gmail.com" class="contact-card-link">
+              <div class="contact-card">
+                <div class="contact-card-icon">
+                  <i class="bi bi-envelope-fill"></i>
+                </div>
+                <h4 data-i18n="contact_correo_t">Correo</h4>
+                <p>jsvanegas2014@gmail.com</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- WhatsApp -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <a href="https://wa.me/+573124264832" target="_blank" rel="noopener noreferrer" class="contact-card-link">
+              <div class="contact-card contact-card--whatsapp">
+                <div class="contact-card-icon">
+                  <i class="bi bi-whatsapp"></i>
+                </div>
+                <h4 data-i18n="contact_whatsapp_t">WhatsApp</h4>
+                <p>+57 312 4264 832</p>
+                <span class="contact-cta" data-i18n="contact_escribir">Escribir ahora</span>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Mapa -->
+        <div class="contact-map-wrapper mt-5" data-aos="fade-up">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7963.182610731235!2d-76.30417438183629!3d3.6800766864045085!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1637878134697!5m2!1ses!2sco"
+            frameborder="0" allowfullscreen="" loading="lazy" title="Ubicación en el mapa"></iframe>
         </div>
 
       </div>

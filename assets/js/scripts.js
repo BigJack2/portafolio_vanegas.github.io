@@ -111,11 +111,13 @@ const TRANSLATIONS = {
 
     // Contact
     contact_titulo: "Contacto",
-    contact_ubicacion_t: "Ubicación:",
+    contact_subtitulo: "¿Tienes un proyecto en mente? Estoy disponible para colaborar. No dudes en escribirme.",
+    contact_ubicacion_t: "Ubicación",
     contact_ubicacion: "El Cerrito (Valle del Cauca - Colombia)",
-    contact_correo_t: "Correo:",
-    contact_whatsapp_t: "Whatsapp:",
+    contact_correo_t: "Correo",
+    contact_whatsapp_t: "WhatsApp",
     contact_whatsapp: "+57 312 4264 832",
+    contact_escribir: "Escribir ahora",
 
     // Footer
     footer_text: "Portafolio de servicios - Sebastian Vanegas",
@@ -257,11 +259,13 @@ const TRANSLATIONS = {
 
     // Contact
     contact_titulo: "Contact",
-    contact_ubicacion_t: "Location:",
+    contact_subtitulo: "Have a project in mind? I'm available to collaborate. Feel free to reach out.",
+    contact_ubicacion_t: "Location",
     contact_ubicacion: "El Cerrito (Valle del Cauca - Colombia)",
-    contact_correo_t: "Email:",
-    contact_whatsapp_t: "WhatsApp:",
+    contact_correo_t: "Email",
+    contact_whatsapp_t: "WhatsApp",
     contact_whatsapp: "+57 312 4264 832",
+    contact_escribir: "Message me now",
 
     // Footer
     footer_text: "Sebastian Vanegas - Services Portfolio",
