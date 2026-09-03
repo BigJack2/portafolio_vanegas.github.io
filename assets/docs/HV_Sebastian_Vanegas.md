@@ -1,0 +1,171 @@
+# SEBASTIÁN VANEGAS
+
+**Desarrollador Backend .NET | C# | ASP.NET | Blazor | SQL Server | Full Stack Laravel**
+
+- **Cédula de ciudadanía:** C.C. 1114828928
+- **Ubicación:** El Cerrito, Valle del Cauca, Colombia (disponible para reubicación nacional e internacional)
+- **Teléfono / WhatsApp:** +57 312 426 4832
+- **Correo electrónico:** jsvanegas2014@gmail.com
+- **LinkedIn:** linkedin.com/in/sebastian-vanegas-560620127
+- **GitHub:** github.com/BigJack2
+- **Portafolio:** bigjack2.github.io/portafolio_vanegas.github.io
+- **Modalidad:** Tiempo completo, híbrido o remoto | Freelance
+
+## Perfil profesional
+
+Desarrollador backend con más de 8 años de trayectoria en tecnología y más de 4 años dedicados a C# y .NET sobre un ERP empresarial en producción, donde construyo lógica de negocio, componentes Blazor y APIs REST aplicando SOLID, KISS y Clean Code, con pruebas unitarias en xUnit y NUnit y validaciones con FluentValidation. En paralelo diseñé y llevé a producción, en solitario, InventoryBox: una plataforma SaaS multiempresa en Laravel 12, PHP 8.3 y MySQL 8 con 163 endpoints REST, RBAC de 47 permisos, 2FA y despliegue en Docker. Sumo a lo técnico una etapa previa administrando infraestructura, licenciamiento y proveedores de T.I. en una compañía multinacional, lo que me permite traducir requerimientos de negocio en soluciones mantenibles y medibles. Inglés B1 (lectura técnica y comunicación profesional escrita).
+
+## Logros destacados
+
+- Diseñé y construí en solitario InventoryBox, un SaaS multiempresa con arquitectura multi-tenant, 25+ modelos de datos, POS con 12 métodos de pago, 40+ reportes y una API REST v1 de 163 endpoints.
+- Más de 4 años aportando módulos críticos al ERP de Siesa, con C#, ASP.NET, Blazor, Entity Framework y SQL Server, en un producto usado por clientes empresariales en producción.
+- Participé en la integración de módulos de Inteligencia Artificial dentro del ERP: procesamiento automático de prompts de código y análisis automatizado de hojas de vida.
+- Identifiqué y corregí cuellos de botella de rendimiento en módulos de alto uso, mejorando la experiencia de los usuarios que operan el ERP a diario.
+- Fundé Buhodemica S.A.S.: llevé un proyecto propio de la idea a empresa legalmente constituida, con producto, servidor de producción, marketing y clientes.
+
+## Competencias técnicas
+
+- **Lenguajes de programación:** C# (avanzado), PHP (avanzado), SQL (intermedio-avanzado), JavaScript (básico-intermedio), HTML5, CSS3, Sass
+- **Backend y frameworks:** .NET, .NET Core, ASP.NET, Entity Framework, Blazor, Laravel 12, Blade, FluentValidation, APIs REST (RESTful)
+- **Frontend:** Blazor, Blade, Bootstrap 5, HTML5, CSS3, Sass, diseño responsivo
+- **Bases de datos:** SQL Server (T-SQL), MySQL 8, PostgreSQL, MongoDB; modelado relacional, consultas y optimización
+- **Pruebas y calidad:** Pruebas unitarias (unit testing) con xUnit y NUnit, FluentValidation, revisión de código (code review), refactorización
+- **Arquitectura y buenas prácticas:** SOLID, KISS, DRY, Clean Code, arquitectura limpia (clean architecture), multi-tenant, RBAC, API REST, JSON
+- **DevOps y herramientas:** Git, GitHub, GitLab, Docker, Supervisor, colas de trabajos, despliegue en servidores, Markdown
+- **Metodologías:** Scrum, metodologías ágiles (agile), Jira, levantamiento y documentación de requerimientos
+- **Seguridad:** Autenticación 2FA TOTP, control de acceso por roles y permisos, auditoría de cambios
+- **Gestión T.I.:** Administración de T.I., licenciamiento ERP y Office 365, gestión de proveedores, gestión de proyectos, soporte a usuarios
+- **Otras herramientas:** CorelDRAW, Photoshop, SEO y Google Search Console, Microsoft Office, SharePoint, Google Workspace
+
+## Experiencia profesional
+
+### Desarrollador Full Stack Laravel — Proyecto propio
+
+*InventoryBox — SaaS de inventario y punto de venta | Colombia (remoto) | 2025 - Actualidad*
+
+Plataforma SaaS multiempresa diseñada, desarrollada y desplegada de forma independiente.
+
+- Llevé el producto de cero a producción sin equipo de apoyo: análisis, modelo de datos, backend, interfaz, pruebas y despliegue.
+- Diseñé una arquitectura multi-tenant con más de 25 modelos Eloquent y aislamiento de datos por empresa, que permite operar varios clientes sobre una sola instancia.
+- Construí la API REST v1 con 163 endpoints documentados y versionados, lo que hace la plataforma integrable con sistemas externos.
+- Desarrollé el módulo POS completo (12 métodos de pago, sesiones de caja multi-turno y arqueo) y las órdenes de compra con máquina de estados de 6 estados y trazabilidad de inventario.
+- Traté la seguridad como requisito y no como añadido: RBAC con 6 roles y 47 permisos granulares, 2FA TOTP (Google Authenticator) y auditoría de cambios sobre más de 35 modelos.
+- Implementé un motor de más de 40 reportes exportables a Excel y PDF que sustituye trabajo manual del área administrativa, y 8 tipos de notificaciones automáticas.
+- Monté el despliegue productivo con contenedores Docker y colas de trabajos gestionadas con Supervisor.
+
+**Tecnologías:** Laravel 12, PHP 8.3, MySQL 8, Blade, Bootstrap 5, Docker, Supervisor, API REST
+
+### Desarrollador Mid (.NET / C#)
+
+*Sistemas de Información Empresarial S.A. — Siesa | Valle del Cauca, Colombia | Enero 2022 - Actualidad*
+
+Desarrollo backend de módulos del ERP corporativo, con foco en rendimiento, escalabilidad y mantenibilidad.
+
+- Desarrollo de lógica de negocio backend en C# y .NET para módulos del ERP en producción, aplicando SOLID, KISS y Clean Code.
+- Construcción de componentes e interfaces dinámicas en Blazor sobre ASP.NET, e integración y consumo de APIs REST entre módulos del ERP y servicios de terceros.
+- Incorporé pruebas unitarias con xUnit y NUnit y validaciones con FluentValidation al entregable estándar, desplazando defectos que antes solo se detectaban en pruebas manuales.
+- Identifiqué y corregí cuellos de botella de rendimiento en procesos críticos de alto uso.
+- Participé en la integración de módulos de Inteligencia Artificial dentro del ERP: procesamiento automático de prompts de código y análisis automatizado de hojas de vida.
+- Acceso a datos con Entity Framework y consultas optimizadas sobre SQL Server.
+- Control de versiones con Git y GitLab, revisión de código y flujo de ramas por funcionalidad.
+- Documentación técnica en Word y Markdown; trabajo bajo Scrum con gestión en Jira.
+
+**Tecnologías:** C#, ASP.NET, .NET Core, Blazor, Entity Framework, SQL Server, xUnit, NUnit, FluentValidation, API REST, Git, GitLab, Jira, Scrum
+
+### Docente de Matemáticas, Física y Estadística
+
+*Instituto Gabriela Mistral | Valle del Cauca, Colombia | Abril 2019 - Enero 2022*
+
+Docencia en grados 6.º a 11.º y diseño curricular del área.
+
+- Enseñanza de Matemáticas, Cálculo, Geometría, Física Aplicada y Estadística de 6.º a 11.º grado.
+- Diseño de la malla curricular del área: estructurar contenido complejo en entregables secuenciales y evaluables.
+- Tres años explicando conceptos abstractos a audiencias no técnicas, base directa de mi capacidad para documentar, capacitar usuarios y comunicarme con áreas de negocio.
+
+**Tecnologías:** Diseño curricular, comunicación, pensamiento lógico y analítico
+
+### Desarrollador Web Full Stack | Fundador
+
+*Buhodemica S.A.S. | Valle del Cauca, Colombia | 2018 - 2020*
+
+Plataforma educativa en línea (www.buhodemica.com) llevada de proyecto personal a empresa constituida.
+
+- Creé la empresa y el producto: análisis de mercado, definición del modelo de negocio, levantamiento de requerimientos y constitución legal de la sociedad.
+- Desarrollo full stack de la plataforma: frontend con HTML5 y CSS3, backend con PHP y bases de datos SQL.
+- Configuración, despliegue y mantenimiento del servidor web de producción, y soporte técnico a usuarios finales.
+- Estrategias de marketing digital, SEO y posicionamiento en línea; prospección de clientes y venta directa del servicio.
+
+**Tecnologías:** PHP, MySQL, HTML5, CSS3, SQL, Administración de servidores, SEO, Marketing Digital
+
+### Analista de Sistemas T.I.
+
+*Carvajal Espacios S.A.S. | Valle del Cauca, Colombia | 2016 - 2018*
+
+Administración tecnológica integral: licenciamiento, infraestructura, proveedores y proyectos.
+
+- Administración de licencias ERP Oracle, Office 365, dominios web y sitios SharePoint en una compañía multinacional.
+- Negociación con proveedores tecnológicos, gestión de pagos, contratos de leasing y compra, soporte y garantías de equipos de cómputo, impresión, red y telefonía.
+- Monitoreo de red, atención de auditorías internas y externas y elaboración de instructivos técnicos y documentación de procesos.
+- Gestión de proyectos tecnológicos y aprobación de asignación de licencias ERP y permisos de navegación.
+
+**Tecnologías:** ERP Oracle, Office 365, SharePoint, Gestión de proveedores, Gestión de proyectos, Soporte T.I.
+
+## Proyectos destacados
+
+### InventoryBox — SaaS de inventario, POS y facturación
+
+Plataforma multiempresa con POS, órdenes de compra, inventarios, facturación, 40+ reportes, RBAC de 47 permisos, 2FA TOTP y API REST de 163 endpoints. Desarrollo individual completo, de la arquitectura al despliegue.
+
+**Tecnologías:** Laravel 12, PHP 8.3, MySQL 8, Blade, Bootstrap 5, Docker, Supervisor
+
+### Integración de Inteligencia Artificial en ERP empresarial
+
+Módulos de IA embebidos en el ERP de Siesa para procesamiento automático de prompts de código y análisis automatizado de hojas de vida.
+
+**Tecnologías:** C#, .NET, APIs de IA
+
+### Buhodemica — Plataforma educativa en línea
+
+Producto educativo propio, desde el análisis de mercado hasta el despliegue, el soporte técnico y la comercialización.
+
+**Tecnologías:** PHP, MySQL, HTML5, CSS3, SEO
+
+### Portafolio y repositorios públicos
+
+Portafolio web con el detalle de cada proyecto y repositorios con desarrollos y ejercicios en C#, .NET, Blazor y PHP: bigjack2.github.io/portafolio_vanegas.github.io | github.com/BigJack2
+
+**Tecnologías:** C#, .NET, Blazor, PHP, Git
+
+## Educación
+
+### Ingeniería de Sistemas (en pausa, faltan 2 semestres)
+
+*Universidad Nacional Abierta y a Distancia — UNAD | 2016 - 2018*
+
+Homologación de 4 semestres por estudios tecnológicos previos en el SENA.
+
+### Tecnólogo en Análisis y Desarrollo de Sistemas de Información
+
+*SENA — Centro de Biotecnología Industrial, Palmira, Valle del Cauca | 2012 - 2015*
+
+## Formación complementaria
+
+- Platzi: Desarrollo web con Blazor y .NET, Fundamentos de .NET, Fundamentos de Entity Framework, Introducción a C#, Introducción al desarrollo Backend, Programación Orientada a Objetos, POO en PHP, JavaScript.
+- Fedesoft: Desarrollador Full Stack.
+- Udemy: Bootstrap 5, SEO con Google Search Console, Marketing por correo electrónico, 60+ herramientas de desarrollo y diseño web.
+- SENA / Carvajal: CorelDRAW, Google Apps, Software Asset Management, SharePoint.
+
+## Idiomas
+
+- Español: nativo.
+- Inglés: B1 intermedio (lectura de documentación técnica y comunicación profesional escrita).
+
+## Habilidades blandas
+
+Pensamiento analítico, resolución de problemas complejos, comunicación efectiva, trabajo en equipo, autonomía, liderazgo positivo, organización, autodisciplina, adaptabilidad, orientación a resultados, aprendizaje continuo y atención al detalle.
+
+## Cargos de interés
+
+Desarrollador Backend .NET (Backend Developer), Desarrollador Full Stack (Full Stack Developer), Ingeniero de Software (Software Engineer), Analista de Desarrollo, Coordinador de T.I.
+
+Referencias laborales y perfil DISC disponibles a solicitud.
